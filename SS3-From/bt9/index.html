@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Thành Viên - Hội Khăn Giấy Ướt</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th><label for="name">Họ và tên:</label></th>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <th><label for="dob">Ngày sinh:</label></th>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <th>Giới tính:</th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Nam">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nữ">
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="phone">Số điện thoại:</label></th>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th><label for="address">Địa chỉ:</label></th>
+                <td><textarea id="address" name="address" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="role">Vai trò trong nhóm:</label></th>
+                <td>
+                    <select id="role" name="role">
+                        <option>Thành viên</option>
+                        <option>Quản trị viên</option>
+                        <option>Người kiểm duyệt</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="hobbies">Sở thích:</label></th>
+                <td><input type="text" id="hobbies" name="hobbies"></td>
+            </tr>
+            <tr>
+                <th><label for="skills">Kỹ năng:</label></th>
+                <td><textarea id="skills" name="skills" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <th>Thời gian rảnh:</th>
+                <td>
+                    <input type="checkbox" id="morning" name="time" value="Sáng">
+                    <label for="morning">Sáng</label>
+                    <input type="checkbox" id="afternoon" name="time" value="Chiều">
+                    <label for="afternoon">Chiều</label>
+                    <input type="checkbox" id="evening" name="time" value="Tối">
+                    <label for="evening">Tối</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="reason">Lý do tham gia nhóm:</label></th>
+                <td><textarea id="reason" name="reason" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="color">Màu yêu thích:</label></th>
+                <td><input type="color" id="color" name="color"></td>
+            </tr>
+            <tr>
+                <th><label for="newsletter">Đăng ký nhận bản tin:</label></th>
+                <td><input type="checkbox" id="newsletter" name="newsletter"> Có</td>
+            </tr>
+            <tr>
+                <th>Nhận thông báo qua:</th>
+                <td>
+                    <input type="radio" id="notification-email" name="notification" value="Email">
+                    <label for="notification-email">Email</label>
+                    <input type="radio" id="notification-sms" name="notification" value="SMS">
+                    <label for="notification-sms">SMS</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" class="btn">Đăng ký thành viên</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
