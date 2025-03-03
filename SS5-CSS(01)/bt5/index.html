@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selector Example</title>
+    <style>
+      h1,
+      h2,
+      h3 {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        color: blue;
+      }
+
+      .container {
+        background-color: rgb(216, 52, 52);
+      }
+
+      .inner-container {
+        margin-left: 10px;
+        padding-left: 15px;
+        background-color: rgb(231, 209, 122);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>5. Lorem ipsum dolor sit amet.</h1>
+    <p>
+      A comma-separated list of selectors represents the union of all elements
+      selected by each of the individual selectors in the list. (A comma is
+      U+002C.) For example, in CSS when several selectors share the same
+      declarations, they may be grouped into a comma-separated list. White space
+      may appear before and/or after the comma.
+    </p>
+    <div class="container">
+      <div class="inner-container">
+        <h2>CSS Example:</h2>
+
+        <p>
+          In this example, we condense three rules with identical declarations
+          into one. Thus,
+        </p>
+
+        <pre>
+  h1 { font-family: sans-serif }
+  h2 { font-family: sans-serif }
+  h3 { font-family: sans-serif }
+  </pre>
+
+        <p>is equivalent to:</p>
+
+        <p>h1,h2,h3{font-family:sans-serif}</p>
+      </div>
+    </div>
+  </body>
+</html>
