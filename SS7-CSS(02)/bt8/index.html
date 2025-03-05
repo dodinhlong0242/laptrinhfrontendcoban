@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+
+    .project-card {
+      border: 1px solid #e2e2e2;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 400px;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px auto;
+    }
+    
+    .project-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .project-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    
+    .status {
+      font-size: 12px;
+      padding: 5px 10px;
+      background-color: #f5a623;
+      color: white;
+      border-radius: 20px;
+    }
+
+    .project-info p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #555;
+    }
+    
+    .client-name {
+      color: #4a90e2;
+    }
+    
+    .budget {
+      color: #4a90e2;
+    }
+
+    .progress-section p {
+      font-size: 14px;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background-color: #e7a453;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      height: 100%;
+      background-color: #f66f00;
+      border-radius: 5px;
+    }
+
+    .progress-percentage {
+      font-size: 14px;
+      text-align: right;
+      color: #333;
+    }
+
+    .dates p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .team {
+      display: flex;
+      margin-top: 15px;
+      align-items: center;
+    }
+
+    .team-member {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .task-info {
+      display: flex;
+      align-items: center;
+      margin-left: 240px;
+    }
+
+    .task-info p {
+      font-size: 14px;
+      margin-top: 0;
+      color: #555;
+      text-align: right;
+    }
+
+    .task-info .icon {
+      font-size: 18px;
+      margin-right: 5px;;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3 class="project-title">Water resistant mosquito...</h3>
+      <span class="status inactive">INACTIVE</span>
+    </div>
+    <div class="project-info">
+      <p><strong>Client:</strong> <span class="client-name">Monsters.Inc</span></p>
+      <p><strong>Budget:</strong> <span class="budget">$10,500</span></p>
+    </div>
+    <div class="progress-section">
+      <p><strong>Progress</strong></p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 76%;"></div>
+      </div>
+      <p class="progress-percentage">76%</p>
+    </div>
+    <div class="dates">
+      <p><strong>Started:</strong> 8th Mar. 2021</p>
+      <p><strong>Deadline:</strong> 15th Sept. 2022</p>
+    </div>
+    <div class="team">
+      <img src="https://i.pinimg.com/736x/b7/91/44/b79144e03dc4996ce319ff59118caf65.jpg" alt="Team Member 1" class="team-member">
+      <img src="https://i.pinimg.com/736x/bb/ae/20/bbae20c6b58ce195093d589731e656eb.jpg" alt="Team Member 2" class="team-member">
+      <div class="task-info">
+        <span class="icon"></span>
+        <p>☑️</p>
+        <p><strong>125</strong> Task</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
