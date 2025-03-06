@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Box</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+        }
+
+        .search_box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+            width: 500px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .search_box input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .search_box img {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search_box">
+        <img src="https://img.icons8.com/ios-glyphs/30/search.png" alt="search">
+        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+        <img src="https://img.icons8.com/ios-glyphs/30/microphone.png" alt="microphone">
+        <img src="https://static.vecteezy.com/system/resources/previews/022/484/510/non_2x/google-lens-icon-logo-symbol-free-png.png" alt="google lens">
+    </div>
+
+</body>
+</html>
