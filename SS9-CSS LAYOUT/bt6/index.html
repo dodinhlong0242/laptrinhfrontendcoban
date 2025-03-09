@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 80%;
+        }
+
+        .rows {
+            display: flex;
+            gap: 10px;
+        }
+
+        .big {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px;
+            width: 400px;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .smallcontainer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .small-rows {
+            display: flex;
+            gap: 10px;
+        }
+
+        .small {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rows">
+            <div class="big">Big</div>
+            <div class="smallcontainer">
+                <div class="small-rows">
+                    <div class="small">Small 1</div>
+                    <div class="small">Small 2</div>
+                </div>
+                <div class="small-rows">
+                    <div class="small">Small 3</div>
+                    <div class="small">Small 4</div>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="big">Big</div>
+            <div class="smallcontainer">
+                <div class="small-rows">
+                    <div class="small">Small 5</div>
+                    <div class="small">Small 6</div>
+                </div>
+                <div class="small-rows">
+                    <div class="small">Small 7</div>
+                    <div class="small">Small 8</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
