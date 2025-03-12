@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        /* Default Layout */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .header {
+            width: 100%;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sidebar1, .sidebar2 {
+            width: 25%;
+            height: 25%;
+            background-color: green;
+            padding: 10px;
+            color: white;
+        }
+
+        .content {
+            width: 25%;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar1, {
+                width: 100%;
+                background-color: green;
+            }
+            .sidebar2 {
+                width: 100%;
+                background-color:pink;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .footer {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="sidebar1">
+            <h2>Sidebar 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="content">
+            <h2>Content Area</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expedita modi repellat laboriosam nam id voluptatibus ab quae...</p>
+        </div>
+
+        <div class="sidebar2">
+            <h2>Sidebar 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expedita modi repellat laboriosam nam id voluptatibus ab quae...</p>
+        </div>
+
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 2px solid #ccc; 
+            border-radius: 8px; 
+            transition: all 0.3s ease; 
+        }
+
+      
+        .item-wide {
+            flex-basis: 100%;
+        }
+
+    
+        .item-half {
+            flex-basis: 48%; 
+        }
+        .item-center {
+            flex-basis: 30%;
+            margin: auto;
+        }
+
+        .item:hover {
+            background-color: #e0e0e0; 
+            border-color: #888; 
+        }
+
+        @media screen and (max-width: 1024px) {
+            .container {
+                flex-direction: column:
+                align-items: center; 
+            }
+
+            .item {
+                flex-basis: 80%; 
+                margin-bottom: 10px; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-wide" style="background-color: #A3D8F4;">Item 1</div>
+        <div class="item item-half" style="background-color: #FFB79A;">Item 2</div>
+
+
+        <div class="item item-half" style="background-color: #F9D576;">Item 3</div>
+        <div class="item item-wide" style="background-color: #A3D8F4;">Item 4</div>
+
+
+        <div class="item item-center" style="background-color: #E98F8C;">Item 5</div>
+        <div class="item item-center" style="background-color: #F9D576;">Item 6</div>
+        <div class="item item-center" style="background-color: #A3D8F4;">Item 7</div>
+    </div>
+</body>
+</html>
