@@ -1,0 +1,5 @@
+let number1=parseInt(prompt("nhập số thứ nhất:"))
+let number2=parseInt(prompt("nhập số thứ hai:"))
+let number3=parseInt(prompt("nhập số thứ ba:"))
+maxvalue= Math.max(number1,number2,number3)
+document.writeln("Số lớn nhất trong 3 số là: "+maxvalue)
