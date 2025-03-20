@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Status</title>
+</head>
+<body>
+    <h1>Kiểm tra trạng thái nhân viên</h1>
+    <label for="status">Nhập trạng thái nhân viên:</label>
+    <input type="text" id="status" name="status">
+    <button onclick="checkStatus()">Kiểm tra</button>
+    <p id="description"></p>
+
+    <script>
+        function checkStatus() {
+            const status = document.getElementById('status').value.toUpperCase();
+            const description = document.getElementById('description');
+            description.textContent = 
+                status === 'WORKING' ? 'Đang làm việc' :
+                status === 'ON_LEAVE' ? 'Đang nghỉ phép' :
+                status === 'RESIGNED' ? 'Đã nghỉ việc' :
+                status === 'TERMINATED' ? 'Bị sa thải' :
+                'Trạng thái không hợp lệ';
+        }
+    </script>
+</body>
+</html>
